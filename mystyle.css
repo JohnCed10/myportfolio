@@ -320,7 +320,7 @@
         border-radius: 10px; /* Optional: Rounded corners */
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1200px) {
         .navbar {
             position: relative;
             color: #2D1B14;
@@ -643,4 +643,23 @@
             }
           
     }
-  
+    @media only screen and (max-width: 1200px) {
+        .BG {
+            width: 350px; /* Adjust size for smaller screens */
+            height: 350px;
+        }
+    
+        .BG::after {
+            filter: blur(3px); /* Reduce blur effect slightly for smaller screens */
+        }
+    
+        .about {
+            font-size: 24px; /* Adjust text size for better readability */
+        }
+    
+        .navbar a {
+            font-size: 16px; /* Reduce navbar text size */
+            padding: 8px 15px;
+        }
+    }
+    
