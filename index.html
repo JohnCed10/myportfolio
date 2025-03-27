@@ -19,7 +19,7 @@
     <a href="#">Home</a>
     <a href="#services">About</a>
     <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#sub">Contact</a>
 </div>
 
 <div class="header">
@@ -149,6 +149,39 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="Reach" aria-required="true">
+<form class="Reach1">
+
+  <h2 id="contact">Contact Me</h2>
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Email Address" required> 
+  <!-- Alert Overlay -->
+  <div class="alert-overlay" id="overlay"></div>
+
+  <div class="alert" id="customAlert">
+    <p>Thank you for reaching out! I will get back to you as soon as possible.
+      <br><span style="color: red"><strong>--please fill up the form correctly--</strong>
+    </p></span></style>
+    <button class="close-btn" onclick="closeAlert()">x</button>
+</div>
+
+<button id="sub" onclick="showAlert(event)">
+  Done
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+  </svg>
+</button>
+</form>
 </div>
 
 
